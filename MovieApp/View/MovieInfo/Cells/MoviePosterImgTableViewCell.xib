@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="227" id="KGk-i7-Jjw" customClass="MoviePosterImgTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="227"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sii-Oz-tvg">
+                        <rect key="frame" x="15" y="15" width="311" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-hV-H0v">
+                                <rect key="frame" x="5" y="5" width="301" height="290"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VJQ-hV-H0v" firstAttribute="top" secondItem="sii-Oz-tvg" secondAttribute="top" constant="5" id="OsK-FD-hZX"/>
+                            <constraint firstAttribute="trailing" secondItem="VJQ-hV-H0v" secondAttribute="trailing" constant="5" id="Y9u-xY-a62"/>
+                            <constraint firstAttribute="height" constant="300" id="hyR-H7-Mzi"/>
+                            <constraint firstAttribute="bottom" secondItem="VJQ-hV-H0v" secondAttribute="bottom" constant="5" id="pOM-gb-HP1"/>
+                            <constraint firstItem="VJQ-hV-H0v" firstAttribute="leading" secondItem="sii-Oz-tvg" secondAttribute="leading" constant="5" id="thU-Bk-TwD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sii-Oz-tvg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5d4-uw-M7F"/>
+                    <constraint firstAttribute="trailing" secondItem="sii-Oz-tvg" secondAttribute="trailing" constant="15" id="OP5-Mg-s1E"/>
+                    <constraint firstAttribute="bottom" secondItem="sii-Oz-tvg" secondAttribute="bottom" constant="10" id="ge3-PO-Ard"/>
+                    <constraint firstItem="sii-Oz-tvg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xao-6B-gMC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="sii-Oz-tvg" id="gCH-KB-6wT"/>
+                <outlet property="posterImgView" destination="VJQ-hV-H0v" id="i7I-TG-dRR"/>
+            </connections>
+            <point key="canvasLocation" x="68.840579710144937" y="144.97767857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
